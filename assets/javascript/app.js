@@ -14,13 +14,23 @@ var questions = [{
 }, {
     question: 'What is the most valuable global brand in the world?',
     answers: ["Samsung", "Apple", "Google", "Amazon" ],
-    correctAnswer: '"Apple"',
+    correctAnswer: "Apple",
     image: 'assets/images/apple.gif'
 }, {
     question: 'What year was the first cell phone invented?',
     answers: ["1965", "1970", "1973", "1982"],
     correctAnswer: "1973",
     image: 'assets/images/cellphone.gif'
+}, {
+    question: 'What is Harry Potters middle name?',
+    answers: ["Sirius", "Vernon", "James", "Fred"],
+    correctAnswer: "James",
+    image: 'assets/images/harrypotter.gif'
+}, {
+    question: 'What is Darth Vaders real name?',
+    answers: ["Lord Voldemort", "Luke Skywalker", "Anakin Skywalker", "Chancellor Palpatine"],
+    correctAnswer: "Anakin Skywalker",
+    image: 'assets/images/anakinskywalker.gif'
 }];
 
 var timer;
@@ -127,7 +137,7 @@ var game = {
 
     game.correct++;
 
-    card.html("<h2>Correct! Wow your smart</h2>");
+    card.html("<h2>Correct! Wow you are smart</h2>");
     card.append("<img src='" + questions[game.currentQuestion].image + "' />");
 
     if (game.currentQuestion === questions.length - 1) {
