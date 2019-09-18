@@ -16,7 +16,9 @@ var questions = [{
     answers: ["Samsung", "Apple", "Google", "Amazon" ],
     correctAnswer: "Apple",
     image: 'assets/images/apple.gif'
-}, {
+}, 
+
+{
     question: 'What year was the first cell phone invented?',
     answers: ["1965", "1970", "1973", "1982"],
     correctAnswer: "1973",
@@ -32,6 +34,7 @@ var questions = [{
     correctAnswer: "Anakin Skywalker",
     image: 'assets/images/anakinskywalker.gif'
 }];
+
 
 var timer;
 
